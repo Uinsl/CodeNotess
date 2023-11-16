@@ -1,0 +1,41 @@
+www.seestudy.cn/?list_9/42.html
+
+wifi
+spware.cn
+spware.cn@26423338#
+
+https://docs.spware.cn
+spware-docs
+Hn26423338
+
+http://code.spware.net:3000/GZHP/mis-serv
+yangzaofeng
+26423338
+
+postgres
+root
+root
+
+--用户名称： spuser    ，密码：测试密码默认为 SqlPass
+string connectionString = "Server=127.0.0.1;Port=5432;Database=myDataBase;User Id=postgres;Password=root;";
+
+string connectionString = "Server=127.0.0.1;Port=5432;Database=sp_gzhp_mis_log;UserName=spuser;Password=SqlPass;";
+
+
+navicat 连接 pgsql ，账号postgres，密码root
+pgAdmin4 :  xx数据库 127.0.0.1 账号postgres，密码root
+根据开发文档的SQL指令，创建 super 用户 ，密码 SqlPass
+sp_gzhp_mis_log
+
+
+win10
+acc: admin1
+pwd: 123456
+
+doenetdeps.spware.net
+https://dotnetdeps.spware.net:8443/v3/index.json
+
+pan.quark.cn/s/5119162db6a2
+
+
+

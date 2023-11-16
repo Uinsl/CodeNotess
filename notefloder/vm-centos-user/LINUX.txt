@@ -1,0 +1,75 @@
+ubuntu
+
+myRoot
+root1
+123456
+123456
+
+@QQ.COM
+
+UBUNTU 
+https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/23.04/
+gcc
+https://blog.csdn.net/qq_52686989/article/details/129759211
+QT
+https://mirrors.tuna.tsinghua.edu.cn/qt/official_releases/online_installers/
+./qt-unified-linux-x64-online.run --mirror https://mirrors.tuna.tsinghua.edu.cn/qt	
+
+
+Running Firefox as root in a regular user's session is not supported.  ($XDG_RUNTIME_DIR is /run/user/1000 which is owned by user1.)
+
+Segmentation fault
+
+sudo yum install centos-release-scl
+
+https://mirros.aliyun.com/qt/
+
+https://mirros.tuna.com/qt/
+
+chmod +x 
+
+https://mirrors.tuna.tsinghua.edu.cn/qt/official_releases/online_installers/
+
+./qt-unified-linux-x64-online.run --mirror https://mirrors.tuna.tsinghua.edu.cn/qt
+ --mirror https://mirrors.tuna.edu.cn/qt
+
+--mirror https://mirrors.tuna.edu.cn/qt
+--mirror https://mirrors.tuna.tsinghua.edu.cn/qt
+
+scl enable devtoolset-8 bash
+
+852631086@QQ.COM
+qtAccount@163.com
+Qtqq086.
+
+
+
+
+qt
+weixin_43525056
+weixin_43525056
+2023.10.18
+点赞
+官方的qt6不持支centos7，似乎是因为centos7自带的glibc版本太低，但是我更新了glibc到2.28也还是没用。
+weixin_43525056
+weixin_43525056
+回复
+weixin_43525056
+2023.10.18
+点赞
+看到有人说直接从源码编译就不会有glibc版本的问题
+
+Error during installation process (qt.qt6.624.gcc_64):
+Could not find the required QmakeOutputInstallerKey(qt.qt6.624.gcc_64_qmakeoutput) value on the installer object. The ConsumeOutput operation on the valid qmake needs to be called first.
+
+
+
+
+
+
+
+
+
+
+
+

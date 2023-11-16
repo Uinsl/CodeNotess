@@ -1,0 +1,30 @@
+http://127.0.0.1:5009
+golbel
+
+http://localhost:5009/spware-api
+
+
+后台api地址 和 账号
+// gzga
+// http://127.0.0.1:5002/api-docs
+// 考情基础资料-面板机OK
+
+//http://127.0.0.1:5009/api-docs/index.html
+身份认证接口
+基于账号密码获取API授权令牌
+管理员账号
+spuser
+26423338
+获得API
+
+其他文档系统
+spware-api
+26423338
+
+redis启动命令
+redis-server.exe redis.windows.conf
+
+
+//
+nvarchar(max) max?
+tinyint?

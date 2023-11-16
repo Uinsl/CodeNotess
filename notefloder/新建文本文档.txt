@@ -1,0 +1,10 @@
+tinyint
+8位
+
+smallint
+16位
+
+int 
+32位
+
+64 bigint
