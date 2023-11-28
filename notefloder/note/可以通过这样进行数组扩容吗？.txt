@@ -1,0 +1,110 @@
+可以通过这样进行数组扩容吗？
+这样扩容是不是很危险？
+最近，在看手动实现vector的扩容，联想到了这个.
+这是运行结果。
+理论上好像是可行的。
+这和Malloc，Realloc有什么区别？
+
+Can the array be expanded in this way?
+Is it dangerous to expand like this?
+Recently, I was looking at the manual expansion of Vector, and I thought of this.
+This is the running result.
+It seems possible in theory？
+What is the difference between this and Malloc and Realloc?
+
+
+Can the array be expanded in this way?
+Is it dangerous to expand like this?
+Recently, I was looking at the manual expansion of Vector, and I thought of this.
+```
+
+#if 1
+#include <iostream>
+using namespace std;
+#define wait std::cin.get();
+
+template<typename T, size_t S>
+class myArray
+{
+public:
+
+	int size() { return S; }
+
+	T& operator[](int index) {
+		cout << "T& []" << endl;
+		return m_data[index];
+	}
+
+	const T& operator[](int index) const {
+		return m_data[index];
+	}
+
+	T* Data() {
+		return m_data;
+	}
+
+	const T* Data() const{
+		return m_data;
+	}
+
+	/*
+	T& operator[](int index) const {
+		cout << "T& [] const" << endl;
+		return m_data[index];
+	}*/
+
+private:
+	T m_data[S];
+};
+
+int main()
+{
+
+	myArray<int, 5> data;
+	auto& ary = data;
+
+	for (int i = 0; i < 7; i++) {
+		ary[i] = i;
+	}
+
+	for (int i = 0; i < 7; i++) {
+		cout << "ary[" << i <<"] = " << ary[i] << endl;
+	}
+
+	wait
+}
+
+#endif
+```
+
+
+
+
+You are reading and writing out of bounds
+There's no relation between this and malloc or realloc at all from what I can see
+So no, this does not work, it's UB
+
+interesting that there are no garbage values at the end
+
+pretty sure allocated memory is zeroed on debug
+
+
+Well, they're written to before being read. 
+The compiler isn't obliged to make out of bounds accesses return garbage. 
+It can do whatever it wants since the behavior is undefined
+In this case it happened to just naively write and read as you'd "expect", 
+and there happened to not be any conflict with other variables in those memory locations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
